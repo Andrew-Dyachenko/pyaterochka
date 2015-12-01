@@ -1,0 +1,29 @@
+{
+  "name": "pyaterochka",
+  "version": "0.0.1",
+  "description": "Pyaterochka online market",
+  "main": "index.php",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "market",
+    "food"
+  ],
+  "authors": [
+    "Andrew_Dyachenko"
+  ],
+  "license": "MIT",
+  "homepage": "pyaterochka.esy.es",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jQuery": "^1"
+  }
+}

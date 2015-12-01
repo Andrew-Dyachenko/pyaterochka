@@ -1,0 +1,120 @@
+@media (min-width: 992px) {
+	.registration {
+		.form-group {
+			&.payPal {
+				margin-left: -2.5px;
+				margin-right: -2.5px;
+				&.showMatches {
+					.payPalWrapper {
+						width: 50%;
+					}
+					.matchesWithEmail {
+						padding: 0 2.5px;
+						&.vertical {
+							height: 0;
+						}
+						&.horizontal {
+							width: 50%;
+						}
+					}
+				}
+				.payPalWrapper {
+					width: 100%;
+					padding: 0 2.5px;
+					.relative {
+						input {
+						}
+					}
+				}
+				.matchesWithEmail {
+					&.vertical {
+						height: 0;
+					}
+					&.horizontal {
+						width: 0;
+					}
+					.checkbox {
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.registration {
+		.birthDay {
+			.labelWrapper {
+				text-align: right;
+			}
+		}
+		.gender {
+			.labelWrapper {
+				text-align: right;
+				line-height: 26px;
+				height: 26px;
+			}
+			.radio {
+				padding-top: 1px;
+				height: 26px;
+			}
+		}
+		.documentName {
+			font-size: 18px;
+		}
+	}
+}
+@media (min-width: 1600px) {
+	.row {
+		&.condensed {
+			margin-left: -5px;
+			margin-right: -5px;
+			> [class^="col-"] {
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		}
+	}
+	.registration {
+		.birthDay {
+			.labelWrapper {
+				text-align: left;
+				label {
+					margin-bottom: 5px;
+				}
+			}
+		}
+		.gender {
+			.labelWrapper {
+				text-align: left;
+				margin-bottom: 5px;
+				line-height: inherit;
+				height: auto;
+			}
+			.radio {
+				padding-top: 4px;
+				height: 30px;
+			}
+		}
+		.form-group {
+			&.payPal {
+				margin-left: -5px;
+				margin-right: -5px;
+				&.showMatches {
+					.payPalWrapper {
+						padding: 0 5px;
+						width: 61.8%;
+					}
+					.matchesWithEmail {
+						padding: 0 5px;
+						&.horizontal {
+							width: 38.2%;
+						}
+					}
+				}
+				.payPalWrapper {
+					padding: 0 5px;
+				}
+			}
+		}
+	}
+}
