@@ -29,32 +29,37 @@
 	<meta name="theme-color" content="#ffffff">
 	
 	<link rel="stylesheet" href="/dist/css/common.css">
-	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">
 
 	<script src="/bower_components/jQuery/dist/jquery.min.js"></script>
-	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="/bower_components/wowjs/dist/wow.min.js"></script>
 	<script src="/dist/js/main.js"></script>
 </head>
 <body>
-	<header>
-		<div class="topHead">
-			<div class="location dropdown">
-				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					Dropdown
-					<span class="caret"></span>
-				</button>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li><a href="#">Action</a></li>
-					<li><a href="#">Another action</a></li>
-					<li><a href="#">Something else here</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">Separated link</a></li>
-				</ul>
+<!-- 	<div class="body"> -->
+		<header>
+			<div class="topHead">
+				<div class="container">
+					<div class="location dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							Dropdown
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="mainHead">
-			
-		</div>
-	</header>
+			<div class="mainHead">
+				<div class="container">
+
+				</div>
+			</div>
+		</header>

@@ -110,19 +110,22 @@ module.exports = function(grunt) {
         },
 
         copy: {
-            main: {
+            fonts: {
                 files: [
-                    {
-                        expand: true,
-                        cwd: 'assets/images/',
-                        src: ['*'],
-                        dest: 'dist/images/',
-                        filter: 'isFile'
-                    },
                     {
                         expand: true,
                         cwd: 'assets/',
                         src: ['fonts/**'],
+                        dest: 'dist/'
+                    }
+                ]
+            },
+            images: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'assets/',
+                        src: ['images/**', '!images/sprite/**'],
                         dest: 'dist/',
                     }
                 ]
@@ -180,8 +183,16 @@ module.exports = function(grunt) {
                 tasks: ['jshint', 'uglify', 'copy:js', 'usebanner:js']
             },
             sprite: {
-                files: ['assets/images/sprite/*.jpg', 'assets/images/sprite/*.jpeg', 'assets/images/sprite/*.png', 'assets/images/sprite/*.bmp'],
+                files: ['assets/images/sprite/**'],
                 tasks: ['sprite', 'less', 'postcss', 'concat', 'cssmin', 'usebanner:css']
+            },
+            images: {
+                files: ['assets/images/*'],
+                tasks: ['copy:images']
+            },
+            fonts: {
+                files: ['assets/fonts/**'],
+                tasks: ['copy:fonts']
             }
         },
 
