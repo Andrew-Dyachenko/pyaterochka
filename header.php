@@ -28,9 +28,9 @@
 	<meta name="msapplication-config" content="/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	
-	<link rel="stylesheet" href="/dist/css/common.css">
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="/dist/css/common.css">
 
 	<script src="/bower_components/jQuery/dist/jquery.min.js"></script>
 	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -38,28 +38,176 @@
 	<script src="/dist/js/main.js"></script>
 </head>
 <body>
-<!-- 	<div class="body"> -->
-		<header>
-			<div class="topHead">
-				<div class="container">
-					<div class="location dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							Dropdown
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
+	<header>
+		<div class="topHead">
+			<div class="wrapper clearfix">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a class="navbar-brand spriteSmith visible-xs" href="/">
+							<span class="icon-headLogo-2"></span>
+						</a>
+						<div class="actionWrapper clearfix">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<form class="navbar-form navbar-left spriteSmith visible-xs" role="search">
+								<div class="form-group no-margin">
+									<input type="text" id="search-1" class="form-control" placeholder="Поиск">
+									<label for="search-1">
+										<span class="glyphicon icon-magnifer-lg"></span>
+									</label>
+									<button type="submit">
+										<span class="glyphicon glyphicon-search"></span>
+									</button>
+								</div>
+							</form>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="mainHead">
-				<div class="container">
 
-				</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-default" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="dropdown location">
+								<a href="#" class="dropdown-toggle spriteSmith" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<span class="glyphicon icon-baloon hidden-xs" aria-hidden="true"></span>
+									Омск
+									<span class="glyphicon arrow hidden-xs"></span>
+									<span class="caret visible-xs-inline-block"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-header">
+										Вы находитесь:
+									</li>
+									<li>
+										<a href="#">
+											Москва
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Санкт-Петербург
+										</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li class="active">
+										<a href="#">
+											Омск
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Набережные Челны
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Тагил
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Владивосток
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Красноярск
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Новосибирск
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Иркутск
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									О компании
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Акции
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Магазины
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Новости
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Товары
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Напишите нам
+								</a>
+							</li>
+							<li class="phone">
+								<a href="tel:+78005555505">
+									8-800-555-55-05
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
 			</div>
-		</header>
+		</div>
+		<div class="mainHead">
+			<div class="wrapper clearfix">
+				<a href="/" class="logo spriteSmith">
+					<span class="inline-block icon-headLogo"></span>
+				</a>
+				<button class="authorization btn-custom btn-custom-default">
+					Войти
+				</button>
+				<nav>
+					<ul class="clearfix">
+						<li>
+							<a href="#">
+								Покупателям
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Партнерам
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Карьера
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<form class="search hidden-xs" role="search">
+					<div class="form-group no-margin spriteSmith">
+						<input type="text" id="search-2" class="form-control" placeholder="Поиск">
+						<label for="search-2">
+							<span class="glyphicon icon-magnifer"></span>
+						</label>
+						<button type="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</header>
