@@ -4,11 +4,22 @@
 			nav {
 				float: none;
 				ul {
-					margin: 0 -15px;
+					text-justify: newspaper;
+					zoom:1;
+					text-align: justify;
+					&:after {
+						width: 100%;
+						height: 0;
+						visibility: hidden;
+						overflow: hidden;
+						content: '';
+						display: inline-block;
+					}
 					li {
-						width: 33.33333333%;
-						padding-left: 15px;
-						padding-right: 15px;
+						float: none;
+						display: inline-block;
+						padding-left: 0;
+						padding-right: 0;
 						~ li {
 							margin-left: 0;
 						}
