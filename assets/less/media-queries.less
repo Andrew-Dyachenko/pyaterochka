@@ -146,9 +146,23 @@
 				}
 			}
 		}
+		.social {
+			left: 32px;
+			margin-left: 0;
+			.item {
+				~ .item {
+					margin-left: 32px;
+				}
+			}
+		}
 		.carousel-indicators {
 			text-align: left;
-			margin-left: -45%;
+			bottom: 25px;
+			left: 30px;
+			right: 30px;
+		}
+		.priceTag {
+			display: block;
 		}
 	}
 }
@@ -314,6 +328,19 @@
 				}
 			}
 		}
+		.social {
+			bottom: -60px;
+			.item {
+				width: 40px;
+				height: 40px;
+				~ .item {
+					margin-left: 30px;
+				}
+				> * {
+					transform: scale(1);
+				}
+			}
+		}
 	}
 }
 @media (min-width: 840px) {
@@ -392,6 +419,9 @@
 				}
 			}
 		}
+		.priceTag {
+			bottom: -60px;
+		}
 		.carousel-indicators {
 			text-align: center;
 			bottom: -48px;
@@ -448,9 +478,9 @@
 					letter-spacing: -.2px;
 				}
 			}
-			.priceTag {
-				right: 60px;
-			}
+		}
+		.priceTag {
+			right: 60px;
 		}
 		.social {
 			left: 60px;

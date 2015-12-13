@@ -217,7 +217,6 @@ header {
 			li {
 				float: left;
 				text-align: center;
-				// padding: 25px 12px 16px;
 				padding: 25px 12px;
 				a {
 					display: inline-block;
@@ -314,6 +313,7 @@ header {
 			min-height: 100%;
 		}
 		&.chiken {
+			overflow: hidden;
 			background-color: #f1e0d4;
 			img {
 				transition: transform .3s ease-out;
@@ -352,83 +352,88 @@ header {
 				font-size: 22px;
 			}
 		}
-		.priceTag {
-			font-family: 'Avenir Next Cyr', sans-serif;
-			position: absolute;
-			bottom: -60px;
-			right: 30px;
-			.price {
-				white-space: nowrap;
-				font-weight: 600;
-				color: #fff;
-				font-size: 54px;
-				padding-top: 36px;
-				.overflow {
-					overflow: hidden;
-					text-overflow: ellipsis;
-					height: 64px;
+	}
+	.priceTag {
+		display: none;
+		font-family: 'Avenir Next Cyr', sans-serif;
+		position: absolute;
+		bottom: -96px;
+		right: 30px;
+		.price {
+			text-align: center;
+			white-space: nowrap;
+			font-weight: 600;
+			color: #fff;
+			font-size: 54px;
+			padding-top: 36px;
+			.overflow {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				height: 64px;
+				sup {
+					position: relative;
+					font-weight: bold;
+					font-size: 30px;
+					top: -18px;
+					left: -9px;
+				}
+			}
+		}
+		.oldPrice {
+			text-align: left;
+			white-space: nowrap;
+			font-weight: 600;
+			color: #0e7b2f;
+			padding-left: 28px;
+			font-size: 27px;
+			.overflow {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				letter-spacing: -.7px;
+				.inline-block {
+					position: relative;
 					sup {
 						position: relative;
 						font-weight: bold;
-						font-size: 30px;
-						top: -18px;
-						left: -9px;
+						font-size: 16px;
+						top: -9px;
+						left: -3px;
+					}
+					strike {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 50%;
+						margin-top: -3px;
+						height: 2px;
+						background-color: #fff;
+						transform: rotate(-15deg);
 					}
 				}
 			}
-			.oldPrice {
-				text-align: left;
-				white-space: nowrap;
-				font-weight: 600;
-				color: #0e7b2f;
-				padding-left: 28px;
-				font-size: 27px;
-				.overflow {
-					overflow: hidden;
-					text-overflow: ellipsis;
-					letter-spacing: -.7px;
-					.inline-block {
-						position: relative;
-						sup {
-							position: relative;
-							font-weight: bold;
-							font-size: 16px;
-							top: -9px;
-							left: -3px;
-						}
-						strike {
-							position: absolute;
-							left: 0;
-							right: 0;
-							top: 50%;
-							margin-top: -3px;
-							height: 2px;
-							background-color: #fff;
-							transform: rotate(-15deg);
-						}
-					}
-				}
-			}
-			.discount {
-				text-align: right;
-				white-space: nowrap;
-				font-size: 27px;
-				padding-right: 36px;
-				margin-top: 1px;
-				color: #fff;
-				.overflow {
-					overflow: hidden;
-					text-overflow: ellipsis;
-				}
+		}
+		.discount {
+			text-align: right;
+			white-space: nowrap;
+			font-size: 27px;
+			padding-right: 36px;
+			margin-top: 1px;
+			color: #fff;
+			.overflow {
+				overflow: hidden;
+				text-overflow: ellipsis;
 			}
 		}
 	}
 	.carousel-indicators {
+		text-align: center;
 		overflow: hidden;
-		margin-bottom: 0;
-		bottom: 25px;
+		left: 15px;
+		right: 15px;
+		bottom: 13px;
 		font-size: 0;
-		width: 90%;
+		width: auto;
+		margin: 0;
 		li {
 			width: 14px;
 			height: 14px;
@@ -446,21 +451,24 @@ header {
 	}
 	.social {
 		position: absolute;
+		left: 50%;
+		margin-left: -140px;
 		z-index: 16;
-		left: 15px;
-		bottom: -60px;
+		bottom: -96px;
 		.item {
 			position: relative;
 			overflow: hidden;
 			float: left;
-			width: 40px;
-			height: 40px;
+			width: 72px;
+			height: 72px;
 			border-radius: 50%;
 			border: 2px solid #d9cabb;
 			~ .item {
 				margin-left: 29px;
 			}
 			> * {
+				transform: scale(1.45);
+				transform-origin: center center;
 				position: absolute;
 				top: 50%;
 				left: 50%;
