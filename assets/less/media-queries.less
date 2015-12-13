@@ -89,10 +89,8 @@
 					.navbar-form {
 						.form-group {
 							label {
-								transition-property: margin-left;
-								transition-duration: .3s;
-								transition-timing-function: ease-out;
-								margin: -20px 0 0 7px;
+								transition: margin-left .3s ease-out;
+								margin: -20px 0 0 6px;
 							}
 						}
 					}
@@ -103,14 +101,54 @@
 }
 @media (min-width: 640px) {
 	header {
+		.topHead {
+			.navbar {
+				.navbar-header {
+					padding: 32px 21px 12px 33px;
+				}
+			}
+		}
 		.mainHead {
 			nav {
+				ul,
 				li {
+					height: 100px;
+				}
+				li {
+					padding: 25px 12px 38px;
 					a {
-						font-size: 20px;
+						font-size: 26px;
+						letter-spacing: .72px;
 					}
 				}
 			}
+			.wrapper {
+				padding: 0 30px;
+			}
+		}
+	}
+	.mainSlider {
+		height: 640px;
+		.item {
+			height: 640px;
+			&.chiken {
+				img {
+					transition: transform .3s ease-out;
+					transform: translate(-200px, 96px);
+				}
+			}
+			.carousel-caption {
+				left: 33px;
+				right: 33px;
+				top: 42px;
+				.title {
+					font-size: 44px;
+				}
+			}
+		}
+		.carousel-indicators {
+			text-align: left;
+			margin-left: -45%;
 		}
 	}
 }
@@ -237,6 +275,44 @@
 			.authorization {
 				display: block;
 			}
+			nav {
+				ul,
+				li {
+					height: auto;
+				}
+				li {
+					padding: 24px 12px 28px;
+					a {
+						font-size: 20px;
+						letter-spacing: .3px;
+					}
+				}
+			}
+		}
+	}
+	.mainSlider {
+		height: 500px;
+		.item {
+			height: 500px;
+			&.chiken {
+				img {
+					transition: transform .3s ease-out;
+					transform: translate(-200px, 0);
+				}
+			}
+			.carousel-caption {
+				top: 57px;
+				.title {
+					width: 400px;
+					margin-top: 71px;
+					font-size: 50px;
+					margin-bottom: 84px;
+				}
+				.event {
+					letter-spacing: .2px;
+					font-size: 20px;
+				}
+			}
 		}
 	}
 }
@@ -285,15 +361,40 @@
 			.search {
 				.form-group {
 					label {
-						transition-property: margin-left;
-						transition-duration: .3s;
-						transition-timing-function: ease-out;
+						transition: margin-left .3s ease-out;
 						margin: -11px 0 0;
 						left: auto;
 						right: 17px;
 					}
 				}
 			}
+			nav {
+				ul,
+				li {
+					height: auto;
+				}
+				li {
+					padding: 24px 12px 28px;
+					a {
+						font-size: 20px;
+						letter-spacing: .3px;
+					}
+				}
+			}
+		}
+	}
+	.mainSlider {
+		.item {
+			&.chiken {
+				img {
+					transition: transform .3s ease-out;
+					transform: translate(-20px, 0);
+				}
+			}
+		}
+		.carousel-indicators {
+			text-align: center;
+			bottom: -48px;
 		}
 	}
 }
@@ -330,6 +431,29 @@
 				padding-left: 50px;
 				padding-right: 60px;
 			}
+		}
+	}
+	.mainSlider {
+		.item {
+			&.chiken {
+				img {
+					transition: transform .3s ease-out;
+					transform: translate(0, 0);
+				}
+			}
+			.carousel-caption {
+				left: 60px;
+				right: 60px;
+				.event {
+					letter-spacing: -.2px;
+				}
+			}
+			.priceTag {
+				right: 60px;
+			}
+		}
+		.social {
+			left: 60px;
 		}
 	}
 }

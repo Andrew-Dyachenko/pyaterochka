@@ -35,6 +35,7 @@
 	<script src="/bower_components/jQuery/dist/jquery.min.js"></script>
 	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="/bower_components/wowjs/dist/wow.min.js"></script>
+
 	<script src="/dist/js/main.js"></script>
 </head>
 <body>
