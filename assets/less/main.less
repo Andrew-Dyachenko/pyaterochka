@@ -8,11 +8,16 @@ body {
 	letter-spacing: .4px;
 	font-family: 'PT Sans', sans-serif;
 }
+.body {
+	padding-bottom: 100px;
+	#gradient > .vertical(#fff, #f0f0f0);
+}
 
 /*--------- Коллекция цветов ---------*/
 @red: #ed1010;
 @cinderella: #fbd5d5;
 @vivid-tangerine: #fe9389;
+@default-color: #333;
 
 button {
 	&.btn-custom {
@@ -302,6 +307,7 @@ header {
 }
 .mainSlider {
 	height: 640px;
+	margin-bottom: 114px;
 	.carousel-inner {
 		padding-bottom: 60px;
 	}
@@ -358,7 +364,7 @@ header {
 		font-family: 'Avenir Next Cyr', sans-serif;
 		position: absolute;
 		bottom: -96px;
-		right: 30px;
+		right: 31px;
 		.price {
 			text-align: center;
 			white-space: nowrap;
@@ -506,6 +512,226 @@ header {
 						margin-left: -21px;
 					}
 				}
+			}
+		}
+	}
+}
+.promoList {
+	font-family: 'Avenir Next Cyr', sans-serif;
+	padding: 0 15px;
+	.title {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-size: 32px;
+	}
+	.titleCounter {
+		text-align: right;
+		margin-top: 25px;
+		margin-bottom: 16px;
+		font-size: 25px;
+		color: #ec2e2e;
+	}
+	.list {
+		margin: 17px -25px 0;
+		[class^="col-"] {
+			padding: 0 25px;
+		}
+	}
+	.item {
+		display: block;
+		background-color: #fff;
+		border-radius: 5px;
+		margin-bottom: 32px;
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .11);
+		> a {
+			outline: none;
+			display: block;
+			&:hover,
+			&:focus {
+				text-decoration: none;
+			}
+		}
+		.image {
+			position: relative;
+			.paddingTop {
+				padding-top: 220px;
+				padding-top: calc(100% / 1.7272);
+			}
+			.absolute {
+				position: absolute;
+				overflow: hidden;
+				opacity: .99; // Browser overflow bug fix;
+				border-radius: 5px 5px 0 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				.overflow {
+					display: table;
+					overflow: hidden;
+					width: 100%;
+					height: 100%;
+					.cell {
+						text-align: center;
+						display: table-cell;
+						vertical-align: middle;
+						img {
+							transition: transform .3s ease-out;
+							transform: scale(1);
+							transform-origin: center center;
+							display: inline-block;
+							vertical-align: middle;
+							min-width: 100%;
+							min-height: 100%;
+						}
+					}
+				}
+			}
+			.priceTag {
+				position: absolute;
+				right: 20px;
+				bottom: -20px;
+				display: table;
+				border-radius: 50%;
+				width: 80px;
+				height: 80px;
+				background-color: #00b746;
+				.cell {
+					display: table-cell;
+					text-align: center;
+					vertical-align: middle;
+					.overflow {
+						white-space: nowrap;
+						display: inline-block;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						font-size: 24px;
+						font-weight: 600;
+						color: #fff;
+						padding-top: 7px;
+						margin: 0 -10px;
+						sup {
+							position: relative;
+							display: inline-block;
+							font-weight: bold;
+							top: -8px;
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+		.infoBlock {
+			display: block;
+			padding: 0 23px 10px;
+			height: 159px;
+			.category {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				letter-spacing: .25px;
+				font-size: 16px;
+				color: #b9b9b9;
+				margin: 0;
+				padding-top: 24px;
+				.icon {
+					display: inline-block;
+					vertical-align: middle;
+					&.icon-egg {
+						margin-top: -7px;
+					}
+				}
+			}
+			.name {
+				color: @default-color;
+				letter-spacing: 1.25px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-height: 2.2em;
+				font-size: 24px;
+				font-weight: 600;
+				margin-bottom: 0;
+			}
+			.time {
+				display: block;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin-top: 16px;
+				font-size: 18px;
+				color: #b9b9b9;
+				.icon {
+					position: relative;
+					display: inline-block;
+					&.icon-clock-lg {
+						position: relative;
+						vertical-align: middle;
+						top: -3px;
+					}
+				}
+			}
+		}
+		.purchase {
+			display: table;
+			border-top: 1px solid #f4f5f5;
+			height: 60px;
+			width: 100%;
+			border-radius: 0 0 4px 4px;
+			.cell {
+				text-align: center;
+				display: table-cell;
+				vertical-align: middle;
+				font-weight: 600;
+				color: #ec2e2e;
+				font-size: 18px;
+			}
+		}
+		&:hover,
+		&:active {
+			.image {
+				.absolute {
+					.overflow {
+						.cell {
+							img {
+								transition: transform .3s ease-out;
+								transform: scale(1.1);
+							}
+						}
+					}
+				}
+			}
+			.purchase {
+				border-color: #ff2a2a;
+				background-color: #ff2a2a;
+				.cell {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+.chronicle {
+	background-color: #fff;
+	padding: 96px 49px 97px;
+	.item {
+		overflow: hidden;
+		display: table;
+		margin: 0 auto;
+		background-color: #f0f0f0;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		.cell {
+			font-family: 'Avenir Next Cyr', sans-serif;
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+			font-weight: 600;
+			background-color: #ff2a2a;
+			font-size: 27px;
+			color: #fff;
+			span {
+				font-weight: bold;
 			}
 		}
 	}
