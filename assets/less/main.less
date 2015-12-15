@@ -10,6 +10,7 @@ body {
 	font-family: 'PT Sans', sans-serif;
 }
 .body {
+	transition: padding-bottom .3s ease-out;
 	#gradient > .vertical(#fff, #f0f0f0);
 }
 
@@ -873,10 +874,139 @@ header {
 	}
 }
 footer {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	padding: 60px 15px 0;
+	// position: absolute; // Для фиксации футера включить.
+	// bottom: 0;
+	// right: 0;
+	// left: 0;
+	padding: 2px 0 0;
+	padding-bottom: 60px;
 	background-color: #4c4c4c;
+	color: #fff;
+	.wrapper {
+		padding: 0 15px;
+		> .row {
+			> [class^="col-"] {
+				ul {
+					list-style: none;
+					padding: 0;
+					margin: 0;
+				}
+				.title {
+					display: none;
+					font-size: 18px;
+					margin: 0;
+					color: rgba(255, 255, 255, .4);
+				}
+				> ul {
+					position: relative;
+					top: -2px;
+					border-bottom: 1px solid #697176;
+					> li {
+						> a {
+							text-decoration: none;
+							position: relative;
+							font-family: 'Avenir Next Cyr', sans-serif;
+							display: block;
+							font-size: 31px;
+							color: rgba(255, 255, 255, .4);
+							padding: 32px 0 35px;
+							&:before,
+							&:after {
+								position: absolute;
+								content: "";
+								top: 50%;
+								margin-top: -7px;
+							}
+							&:before {
+								right: 44px;
+								border-top: 14px solid rgba(255, 255, 255, .4);
+								border-left: 12px solid transparent;
+								border-right: 12px solid transparent;
+							}
+							&:after {
+								right: 46px;
+								border-top: 12px solid #4c4c4c;
+								border-left: 10px solid transparent;
+								border-right: 10px solid transparent;
+							}
+							&[aria-expanded="true"] {
+								&:before {
+									border-bottom: 14px solid rgba(255, 255, 255, .4);
+									border-top: none;
+								}
+								&:after {
+									border-bottom: 12px solid #4c4c4c;
+									border-top: none;
+									margin-top: -5px;
+								}
+							}
+							&:hover {
+								color: #fff;
+								&:before {
+									border-top-color: #fff;
+									border-bottom-color: #fff;
+								}
+							}
+						}
+						> ul {
+							overflow: hidden;
+							display: none;
+							margin-bottom: 20px;
+							> li {
+								> a {
+									font-size: 14px;
+									color: #fff;
+								}
+								~ li {
+									margin-top: 8px;
+								}
+							}
+							&.collapse {
+								display: block;
+								height: 0;
+								margin: 0;
+								&.in {
+									height: auto;
+									margin-bottom: 20px;
+								}
+							}
+							&.collapsing {
+								display: block;
+							}
+							~ ul {
+								a {
+									font-family: 'Avenir Next Cyr', sans-serif;
+									font-size: 20px;
+								}
+							}
+						}
+					}
+				}
+				.padding {
+					padding-top: 46px;
+				}
+				.icon-logo-gray {
+					display: none;
+				}
+				address {
+					font-family: 'Avenir Next Cyr', sans-serif;
+					margin: 24px 0 0;
+					font-size: 22px;
+					color: rgba(255, 255, 255, .4);
+					letter-spacing: 1.2px;
+					p {
+						margin: 0;
+						~ p {
+							margin-top: 0;
+						}
+						&:first-child {
+							+ p {
+								line-height: 32px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

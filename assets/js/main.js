@@ -47,8 +47,9 @@ var mainSliderCaps = {
 
 var footer = {
 	init: function () {
+		var self = this;
 		this.footer  = jQuery('footer');
-		this.padding();
+		self.padding();
 		this.initListner();
 	},
 	padding: function () {
@@ -59,11 +60,18 @@ var footer = {
 		jQuery(window).resize(function () {
 			self.padding();
 		});
+		jQuery('[id^="footerCollapse-"]').on('shown.bs.collapse', function () {
+			self.padding();
+		});
 	}
 };
 
 jQuery(document).ready(function () {
 	mainSliderCaps.init();
-	new WOW().init();
-	footer.init();
+	var wow = new WOW({
+		callback: function () {
+			//footer.init(); // Для фиксации футера включить.
+		}
+	});
+	wow.init();
 });

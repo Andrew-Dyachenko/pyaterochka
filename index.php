@@ -108,7 +108,7 @@
 					</a>
 				</form>
 			</div>
-			<!-- <div class="col-sm-6 col-md-4">
+			<div class="col-sm-6 col-md-4">
 				<form class="item" novalidate>
 					<a href="#">
 						<div class="image">
@@ -185,7 +185,7 @@
 						</div>
 					</a>
 				</form>
-			</div> -->
+			</div>
 		</div>
 	</div>
 	<div class="chronicle">
