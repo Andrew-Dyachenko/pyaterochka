@@ -97,7 +97,7 @@
 								Блинчики с клубникой
 							</h4>
 							<span class="time spriteSmith">
-								<span class="icon icon-clock-lg visible-xs-inline-block"></span><span class="icon icon-clock visible-lg-inline-block"></span><span class="icon icon-clock-sm visible-md-inline-block"></span> 0:40
+								<span class="icon icon-clock-lg visible-xs-inline-block"></span><span class="icon icon-clock visible-lg-inline-block"></span><span class="icon icon-clock-sm visible-sm-inline-block visible-md-inline-block"></span> 0:40
 							</span>
 						</span>
 						<div class="purchase">
@@ -136,7 +136,7 @@
 								Говяжий стейк с песто и кукурузой
 							</h4>
 							<span class="time spriteSmith">
-								<span class="icon icon-clock-lg visible xs"></span><span class="icon icon-clock visible-lg"></span><span class="icon icon-clock-sm visible-md"></span> 0:40
+								<span class="icon icon-clock-lg visible-xs-inline-block"></span><span class="icon icon-clock visible-lg-inline-block"></span><span class="icon icon-clock-sm visible-sm-inline-block visible-md-inline-block"></span> 0:40
 							</span>
 						</span>
 						<div class="purchase">
@@ -175,7 +175,7 @@
 								Вафли с мёдом
 							</h4>
 							<span class="time spriteSmith">
-								<span class="icon icon-clock-lg visible xs"></span><span class="icon icon-clock visible-lg"></span><span class="icon icon-clock-sm visible-md"></span> 0:40
+								<span class="icon icon-clock-lg visible-xs-inline-block"></span><span class="icon icon-clock visible-lg-inline-block"></span><span class="icon icon-clock-sm visible-sm-inline-block visible-md-inline-block"></span> 0:40
 							</span>
 						</span>
 						<div class="purchase">
@@ -209,6 +209,54 @@
 				<div class="item">
 					<div class="cell">
 						<span>+</span>456
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="marketNetworkPromo">
+		<div class="center-block spriteSmith">
+			<div class="icon icon-tree-1 wow fadeInUp" data-wow-delay=".618s"></div>
+			<div class="icon icon-tree-2 wow fadeInDown" data-wow-delay=".618s"></div>
+			<div class="icon icon-tree-3 wow fadeInRight" data-wow-delay=".618s"></div>
+			<div class="icon icon-road-1 wow fadeInLeft" data-wow-offset="-115" data-wow-delay=".618s"></div>
+			<div class="icon icon-road-2 wow fadeInDown" data-wow-offset="141" data-wow-delay=".618s"></div>
+			<div class="icon icon-promoBaloon wow fadeInUp" data-wow-delay=".618s"></div>
+			<div class="number wow fadeInRight" data-wow-delay=".618s">
+				<div class="inline-block">5</div>100
+			</div>
+			<div class="figure wow fadeIn" data-wow-delay="1s">
+				магазинов
+			</div>
+		</div>
+	</div>
+	<div class="marketCardPromo">
+		<div class="row">
+			<div class="col-sm-7">
+				<h3 class="title">
+					Платите меньше
+				</h3>
+				<p>
+					Cтаньте частью программы лояльности: получите карту Пятерочки в любом магазинесети и покупайте дешевле.
+				</p>
+				<div class="card big">
+					<div class="paddingTop"></div>
+					<div class="absolute spriteSmith">
+						<div class="inline-block icon-logo-1"></div>
+					</div>
+				</div>
+				<button class="btn-custom btn-custom-lg btn-custom-default">
+					Зарегистрировать карту
+				</button>
+				<button class="btn-custom btn-custom-md btn-custom-default">
+					Зарегистрировать карту
+				</button>
+			</div>
+			<div class="col-sm-5">
+				<div class="card small">
+					<div class="paddingTop"></div>
+					<div class="absolute spriteSmith">
+						<div class="inline-block icon-logo-2"></div>
 					</div>
 				</div>
 			</div>

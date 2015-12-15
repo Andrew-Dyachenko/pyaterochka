@@ -231,6 +231,26 @@
 			height: 112px;
 		}
 	}
+	.marketNetworkPromo {
+		.center-block {
+			left: -28px;
+			height: 304px;
+		}
+	}
+	.marketCardPromo {
+		padding: 0 30px 64px;
+		.title {
+			font-size: 43px;
+		}
+		button {
+			width: 100%;
+		}
+		.card {
+			&.big {
+				display: block;
+			}
+		}
+	}
 }
 @media (min-width: 768px) {
 	header {
@@ -408,15 +428,106 @@
 			}
 		}
 	}
+	.chronicle {
+		padding: 96px 0px 97px;
+	}
 	.promoList {
-		.title {
-			font-size: 27px;
-			letter-spacing: 1px;
+		.list {
+			margin-top: 8px;
 		}
-		.titleCounter {
-			margin-top: 28px;
-			margin-bottom: 16px;
-			font-size: 18px;
+		.item {
+			.image {
+				.priceTag {
+					width: 66px;
+					height: 66px;
+					right: 16px;
+					bottom: -18px;
+					.cell {
+						.overflow {
+							font-size: 20px;
+							sup {
+								top: -8px;
+								font-size: 10px;
+								left: auto;
+							}
+						}
+					}
+				}
+			}
+			.infoBlock {
+				height: 142px;
+				padding: 0 19px 10px;
+				.category {
+					letter-spacing: 1.3px;
+					padding-top: 31px;
+					font-size: 12px;
+					.icon {
+						vertical-align: middle;
+						letter-spacing: .4px;
+					}
+				}
+				.name {
+					font-size: 19px;
+					margin-top: 7px;
+					letter-spacing: 1.2px;
+				}
+				.time {
+					margin-top: 13px;
+					font-size: 16px;
+					.icon-clock {
+						display: inline-block;
+						top: 1px;
+					}
+					.icon-clock-lg {
+						display: none;
+					}
+				}
+			}
+			.purchase {
+				height: 47px;
+				.cell {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.marketCardPromo {
+		.title {
+			font-size: 50px;
+			margin-top: 55px;
+			margin-bottom: 11px;
+			letter-spacing: 0;
+		}
+		button {
+			margin-top: 24px;
+			width: auto;
+			&.btn-custom-lg {
+				display: none;
+			}
+			&.btn-custom-md {
+				display: inline-block;
+			}
+		}
+		p {
+			letter-spacing: 0;
+			font-size: 19px;
+			line-height: 1.35em;
+		}
+		.card {
+			&.big {
+				display: none;
+			}
+			&.small {
+				display: block;
+				width: auto;
+				float: none;
+				.paddingTop {
+					padding-top: calc(100% / 1.6934);
+				}
+				.absolute {
+					padding: 18px 12px;
+				}
+			}
 		}
 	}
 }
@@ -442,6 +553,25 @@
 		.mainHead {
 			.logo {
 				display: block;
+			}
+		}
+	}
+}
+@media (min-width: 992px) {
+	.chronicle {
+		padding: 96px 15px 97px;
+	}
+	.marketCardPromo {
+		.card {
+			&.small {
+				float: right;
+				width: 337px;
+				.paddingTop {
+					padding-top: 199px;
+				}
+				.absolute {
+					padding: 18px 25px;
+				}
 			}
 		}
 	}
@@ -504,66 +634,6 @@
 			bottom: -48px;
 		}
 	}
-	.promoList {
-		.list {
-			margin-top: 8px;
-		}
-		.item {
-			.image {
-				.priceTag {
-					width: 66px;
-					height: 66px;
-					right: 16px;
-					bottom: -18px;
-					.cell {
-						.overflow {
-							font-size: 20px;
-							sup {
-								top: -8px;
-								font-size: 10px;
-								left: auto;
-							}
-						}
-					}
-				}
-			}
-			.infoBlock {
-				height: 142px;
-				padding: 0 19px 10px;
-				.category {
-					letter-spacing: 1.3px;
-					padding-top: 31px;
-					font-size: 12px;
-					.icon {
-						vertical-align: middle;
-						letter-spacing: .4px;
-					}
-				}
-				.name {
-					font-size: 19px;
-					margin-top: 7px;
-					letter-spacing: 1.2px;
-				}
-				.time {
-					margin-top: 13px;
-					font-size: 16px;
-					.icon-clock {
-						display: inline-block;
-						top: 1px;
-					}
-					.icon-clock-lg {
-						display: none;
-					}
-				}
-			}
-			.purchase {
-				height: 47px;
-				.cell {
-					font-size: 16px;
-				}
-			}
-		}
-	}
 	.chronicle {
 		margin-top: -2px;
 		padding: 55px 30px 57px;
@@ -571,6 +641,16 @@
 			width: 100px;
 			height: 100px;
 		}
+	}
+	.marketNetworkPromo {
+		padding: 0 60px;
+		.center-block {
+			left: -18px;
+			height: 300px;
+		}
+	}
+	.marketCardPromo {
+		padding: 0px 58px 60px;
 	}
 }
 @media (min-width: 1200px) {
@@ -684,5 +764,19 @@
 		padding-top: 100px;
 		padding-bottom: 101px;
 		margin-top: 28px;
+	}
+	.marketNetworkPromo {
+		.center-block {
+			left: 2px;
+		}
+	}
+	.marketCardPromo {
+		.card {
+			&.small {
+				float: left;
+				right: auto;
+				margin-left: 34px;
+			}
+		}
 	}
 }

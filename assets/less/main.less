@@ -2,6 +2,7 @@ html {
 	height: 100%;
 }
 body {
+	position: relative;
 	height: auto !important;
 	min-height: 100%;
 	min-width: 320px; //iPhone 4
@@ -9,7 +10,6 @@ body {
 	font-family: 'PT Sans', sans-serif;
 }
 .body {
-	padding-bottom: 100px;
 	#gradient > .vertical(#fff, #f0f0f0);
 }
 
@@ -38,6 +38,21 @@ button {
 				background-color: #fff;
 				color: @red;
 			}
+		}
+		&.btn-custom-lg {
+			font-weight: bold;
+			height: 80px;
+			border-radius: 40px;
+			font-size: 27px;
+			padding-left: 34px;
+			padding-right: 34px;
+		}
+		&.btn-custom-md {
+			height: 60px;
+			border-radius: 30px;
+			padding-left: 34px;
+			padding-right: 34px;
+			letter-spacing: .3px;
 		}
 	}
 }
@@ -735,4 +750,133 @@ header {
 			}
 		}
 	}
+}
+.marketNetworkPromo {
+	overflow: hidden;
+	background-color: #008527;
+	.center-block {
+		position: relative;
+		left: 66px;
+		height: 304px;
+		width: 555px;
+		.icon {
+			position: absolute;
+			&.icon-tree-1 {
+				top: 133px;
+				left: 39px;
+			}
+			&.icon-tree-2 {
+				top: 75px;
+				left: 91px;
+			}
+			&.icon-tree-3 {
+				top: 199px;
+				left: 182px;
+			}
+			&.icon-promoBaloon {
+				top: 83px;
+				left: 100px;
+			}
+			&.icon-road-1 {
+				top: 115px;
+				left: -75px;
+			}
+			&.icon-road-2 {
+				top: -141px;
+				left: 66px;
+			}
+		}
+		.number {
+			position: absolute;
+			font-family: 'DIN Alternate', sans-serif;
+			font-weight: bold;
+			color: #fff;
+			font-size: 123.39px;
+			top: 28px;
+			left: 222px;
+			.inline-block {
+				margin-right: 24px;
+			}
+		}
+		.figure {
+			position: absolute;
+			font-family: 'Avenir Next Cyr', sans-serif;
+			font-size: 22px;
+			color: #bdcf01;
+			top: 192px;
+			left: 231px;
+			letter-spacing: 1.6px;
+		}
+	}
+}
+.marketCardPromo {
+	font-family: 'Avenir Next Cyr', sans-serif;
+	overflow: hidden;
+	padding: 0 15px 64px;
+	background-color: #ff2a2a;
+	.title {
+		font-weight: bold;
+		font-size: 43px;
+		margin-top: 57px;
+		margin-bottom: 31px;
+		color: #fff;
+	}
+	p {
+		letter-spacing: 1.1px;
+		line-height: 1.2em;
+		font-size: 27px;
+		margin-bottom: 25px;
+		color: #fff;
+	}
+	.card {
+		position: relative;
+		overflow: hidden;
+		background-color: #fff;
+		&.big {
+			border-radius: 30px;
+			.paddingTop {
+				padding-top: 320px;
+				padding-top: calc(100% / 1.8);	
+			}
+			.absolute {
+				padding: 26px;
+			}
+		}
+		&.small {
+			position: relative;
+			float: right;
+			display: none;
+			right: -8px;
+			width: 337px;
+			border-radius: 20px;
+			margin-top: 81px;
+			.paddingTop {
+				padding-top: 199px;
+			}
+			.absolute {
+				padding: 18px 25px;
+			}
+		}
+		.absolute {
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+	}
+	button {
+		width: 100%;
+		margin-top: 29px;
+		&.btn-custom-md {
+			display: none;
+		}
+	}
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 60px 15px 0;
+	background-color: #4c4c4c;
 }

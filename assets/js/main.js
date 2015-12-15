@@ -44,7 +44,26 @@ var mainSliderCaps = {
 		});
 	}
 };
+
+var footer = {
+	init: function () {
+		this.footer  = jQuery('footer');
+		this.padding();
+		this.initListner();
+	},
+	padding: function () {
+		jQuery('.body').css('padding-bottom', this.footer.outerHeight());
+	},
+	initListner: function () {
+		var self = this;
+		jQuery(window).resize(function () {
+			self.padding();
+		});
+	}
+};
+
 jQuery(document).ready(function () {
 	mainSliderCaps.init();
 	new WOW().init();
+	footer.init();
 });
