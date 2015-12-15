@@ -287,16 +287,3 @@
 	</footer>
 </body>
 </html>
-
-
-<!-- <a class="btn btn-primary" role="button" data-toggle="collapse" href="#footerCollapse" aria-expanded="false" aria-controls="footerCollapse">
-	Link with href
-</a>
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#footerCollapse" aria-expanded="false" aria-controls="footerCollapse">
-	Button with data-target
-</button>
-<div class="collapse" id="footerCollapse">
-	<div class="well">
-		...
-	</div>
-</div> -->
