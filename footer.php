@@ -72,7 +72,7 @@
 					<ul>
 						<li>
 							<h5 class="title">
-								Партнерам
+								Карьера
 							</h5>
 							<a href="#footerCollapse-2" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="footerCollapse-2">
 								Карьера
@@ -158,7 +158,7 @@
 					<ul>
 						<li>
 							<h5 class="title">
-								Партнерам
+								Покупателям
 							</h5>
 							<a href="#footerCollapse-3" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="footerCollapse-3">
 								Покупателям
@@ -234,12 +234,12 @@
 					<ul>
 						<li>
 							<h5 class="title">
-								Партнерам
+								Обратная связь
 							</h5>
 							<a href="#footerCollapse-4" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="footerCollapse-4">
 								Обратная связь
 							</a>
-							<ul class="collapse" id="footerCollapse-4">
+							<ul>
 								<li>
 									<a href="#">
 										Напишите нам
@@ -251,7 +251,7 @@
 									</a>
 								</li>
 							</ul>
-							<ul>
+							<ul class="collapse" id="footerCollapse-4">
 								<li>
 									<a href="#">
 										Напишите нам
